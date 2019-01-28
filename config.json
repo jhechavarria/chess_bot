@@ -1,6 +1,6 @@
 {
     "debug": false,
-    "token": "YOUR TOKEN GOES HERE",
+    "token": "YOUR DISCORD BOT TOKEN GOES HERE",
     "client": {
         "commandPrefix": "?",
         "owner": "YOUR DISCORD ID GORS HERE",

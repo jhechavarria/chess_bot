@@ -4,7 +4,8 @@ services:
     image: "node:alpine"
     container_name: chess_bot
     environment:
-      APP_TOKEN: "NDcyOTE0OTgzOTg3MDUyNTQ0.Dx06gw.gDs9n3sJZ6jm0j2BIRgKcz-v4R4"
+      APP_TOKEN: "YOUR DISCORD BOT TOKEN GOES HERE"
+      APP_OWNER: "YOUR DISCORD ID GOES HERE"
     working_dir: /usr/app
     volumes:
       - .:/usr/app

@@ -4,6 +4,7 @@ const config = require('./config.json');
 const cdn = require('./cdn');
 
 config.token = process.env.APP_TOKEN ? process.env.APP_TOKEN : config.token;
+config.client.owner = process.env.APP_OWNER ? process.env.APP_OWNER : config.client.owner;
 
 const client = new CommandoClient(config.client);
 
