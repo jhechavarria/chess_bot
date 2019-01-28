@@ -18,7 +18,7 @@ Vous devez disposer d'un compte developpeur Discord et d'un bot avec son token. 
 ## Installation et lancement
 
 ### Avec Docker
-Mettre votre token dans la variable d'environnement **APP_TOKEN** se trouvant dans le fichier **docker-compose.yml**
+Mettre votre token dans la variable d'environnement **APP_TOKEN** se trouvant dans le fichier **docker-compose.yml** ainsi que votre identifiant Discord dans la variable **APP_OWNER**
 
 Lancer la commande `docker-compose up -d`. Le premier lancement peut prendre quelques minutes pour installer les dependances.
 
