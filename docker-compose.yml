@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    image: "chess_bot"
+    container_name: chess_bot
+    environment:
+      APP_TOKEN: "NDcyOTE0OTgzOTg3MDUyNTQ0.Dx06gw.gDs9n3sJZ6jm0j2BIRgKcz-v4R4"
+    working_dir: /usr/app
+    volumes:
+      - .:/usr/app
+    ports:
+      - "8080:8080"
+    command: sh run.sh
