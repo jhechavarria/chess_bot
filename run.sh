@@ -1,3 +1,3 @@
-npm i
+npm install
 
 node index.js
