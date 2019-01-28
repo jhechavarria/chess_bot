@@ -1,0 +1,12 @@
+{
+    "debug": false,
+    "token": "YOUR TOKEN GOES HERE",
+    "client": {
+        "commandPrefix": "?",
+        "owner": "YOUR DISCORD ID GORS HERE",
+        "invite": "https://discord.gg/bRCvFy9"
+    },
+    "groups": [
+        ["test", "Commandes de test"]
+    ]
+}

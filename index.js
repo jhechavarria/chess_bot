@@ -1,18 +1,15 @@
 const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
+const config = require('./config.json');
 const cdn = require('./cdn');
 
-const client = new CommandoClient({
-	commandPrefix: '?',
-	owner: '350401010713231363',
-	invite: 'https://discord.gg/bRCvFy9',
-});
+config.token = process.env.APP_TOKEN ? process.env.APP_TOKEN : config.token;
+
+const client = new CommandoClient(config.client);
 
 client.registry
 	.registerDefaultTypes()
-	.registerGroups([
-        ['test', 'Commandes de test']
-	])
+	.registerGroups(config.groups)
 	.registerDefaultGroups()
 	.registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
@@ -23,6 +20,7 @@ client.once('ready', () => {
 });
 
 client.on('error', console.error);
-client.on('commandError', console.error);
+if (config.debug)
+	client.on('commandError', console.error);
 
-client.login(process.env.APP_TOKEN);
+client.login(config.token);
