@@ -79,7 +79,7 @@ Avec le bot lance en daemon avec `docker-compose up -d`, entrer en mode interact
 
 Une fois ces changements apportes taper `docker restart chess_bot` pour relancer le bot avec le support de nodemon.
 
-Pour des retours d'erreur complets de la part du bot, passer la cle **debug** a *true* dans le fichier **config.json** et lancer la commande suivante: `docker logs -f --tail --timestamps gitlab_c`
+Pour des retours d'erreur complets de la part du bot, passer la cle **debug** a *true* dans le fichier **config.json** et lancer la commande suivante: `docker logs -f --tail --timestamps chess_bot`
 
 #### Exemple de config.json
 ```json
